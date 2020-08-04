@@ -4,4 +4,5 @@
     <string name="o">O</string>
     <string name="city">Austin TX</string>
     <string name="weather">Sunny</string>
+    <string name="todo">TODO</string>
 </resources>

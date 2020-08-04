@@ -13,7 +13,7 @@ public class WeatherRepository {
     private static WeatherRepository instance;
     private RestClient apiClient;
 
-    private MediatorLiveData<WeatherInfo> wData = new MediatorLiveData<>();
+    //private MediatorLiveData<WeatherInfo> wData = new MediatorLiveData<>();
 
     public static WeatherRepository getInstance(){
         if(instance == null){
@@ -24,22 +24,22 @@ public class WeatherRepository {
 
     private WeatherRepository(){
         apiClient = RestClient.getInstance();
-        init();
+    //    init();
     }
 
-    private void init() {
-        LiveData<WeatherInfo> liveData = apiClient.getWeatherInfo();
-        wData.addSource(liveData, new Observer<WeatherInfo>() {
-            @Override
-            public void onChanged(WeatherInfo weatherInfo) {
-                if(weatherInfo != null){
-                    wData.setValue(weatherInfo);
-                }else{
-                    //error handeling
-                }
-            }
-        });
-    }
+//    private void init() {
+//        LiveData<WeatherInfo> liveData = apiClient.getWeatherInfo();
+//        wData.addSource(liveData, new Observer<WeatherInfo>() {
+//            @Override
+//            public void onChanged(WeatherInfo weatherInfo) {
+//                if(weatherInfo != null){
+//                    wData.setValue(weatherInfo);
+//                }else{
+//                    //error handeling
+//                }
+//            }
+//        });
+//    }
 
     public void searchWeatherApi(String query,
                                  String zip,
