@@ -13,8 +13,9 @@ public class ExecutorServices {
         return instance;
     }
 
-    private final ScheduledExecutorService newtworkIO = Executors.newScheduledThreadPool(3);
-
+    //Choosing one thread for this app
+    private final ScheduledExecutorService newtworkIO = Executors.newScheduledThreadPool(1);
+    
     public ScheduledExecutorService networkIO(){
         return newtworkIO;
     }
