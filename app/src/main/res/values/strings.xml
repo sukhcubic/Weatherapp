@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weatherapp</string>
+    <string name="place_holder">100</string>
+    <string name="o">O</string>
+    <string name="city">Austin TX</string>
+    <string name="weather">Sunny</string>
+</resources>
