@@ -24,22 +24,7 @@ public class WeatherRepository {
 
     private WeatherRepository(){
         apiClient = RestClient.getInstance();
-    //    init();
     }
-
-//    private void init() {
-//        LiveData<WeatherInfo> liveData = apiClient.getWeatherInfo();
-//        wData.addSource(liveData, new Observer<WeatherInfo>() {
-//            @Override
-//            public void onChanged(WeatherInfo weatherInfo) {
-//                if(weatherInfo != null){
-//                    wData.setValue(weatherInfo);
-//                }else{
-//                    //error handeling
-//                }
-//            }
-//        });
-//    }
 
     public void searchWeatherApi(String query,
                                  String zip,
