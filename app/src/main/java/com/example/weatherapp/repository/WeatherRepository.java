@@ -13,8 +13,6 @@ public class WeatherRepository {
     private static WeatherRepository instance;
     private RestClient apiClient;
 
-    //private MediatorLiveData<WeatherInfo> wData = new MediatorLiveData<>();
-
     public static WeatherRepository getInstance(){
         if(instance == null){
             instance = new WeatherRepository();
