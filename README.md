@@ -1,5 +1,5 @@
 # Weatherapp
-A simple single page application display weather result for a day. 
+A simple single page test app that displays Austin current weather. 
 This app uses MVVM pattern
 
 
